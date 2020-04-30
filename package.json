@@ -1,0 +1,34 @@
+{
+  "name": "marn_term",
+  "version": "1.0.0",
+  "description": "This project is a term paper.",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=pruduction node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently  \"npm run client\"  \"npm run server\""
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Razyhraiev Vladislav <nicorvenius@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.11",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.0",
+    "nodemon": "^2.0.2"
+  }
+}

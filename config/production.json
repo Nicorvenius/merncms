@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://Ncorvenius:practice@cluster0-0urfn.gcp.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "dgflgmner'amgngkposdkhgfh",
+  "baseUrl": "http://localhost:5000"
+}
